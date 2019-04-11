@@ -1,0 +1,16 @@
+at\fhv\persistencejava\entities\Actor.class
+at\fhv\persistencejava\entities\Film.class
+at\fhv\persistencejava\repositories\LanguageRespository.class
+at\fhv\persistencejava\restcontrollers\CustomerAPI.class
+at\fhv\persistencejava\repositories\BaseRepository.class
+at\fhv\persistencejava\repositories\GenreRepository.class
+at\fhv\persistencejava\facade\Facade.class
+at\fhv\persistencejava\entities\Genre.class
+at\fhv\persistencejava\entities\Customer.class
+at\fhv\persistencejava\entities\IEntity.class
+at\fhv\persistencejava\Main.class
+at\fhv\persistencejava\repositories\FilmRepository.class
+at\fhv\persistencejava\repositories\ActorRepository.class
+at\fhv\persistencejava\entities\Language.class
+at\fhv\persistencejava\restcontrollers\ActorRestController.class
+at\fhv\persistencejava\SwaggerApplication.class
