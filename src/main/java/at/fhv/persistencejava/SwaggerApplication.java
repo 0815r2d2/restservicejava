@@ -39,5 +39,4 @@ public class SwaggerApplication extends Application {
 
     return set;
   }
-
 }

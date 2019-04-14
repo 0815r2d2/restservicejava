@@ -12,7 +12,7 @@
 	<name>restservicejava</name>
 
 	<properties>
-		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+		<!--  <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -31,8 +31,8 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.11.Final</version>
-			<scope>provided</scope>
+			<version>5.4.2.Final</version>
+		  	<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
@@ -50,9 +50,9 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
-					<compilerArguments>
+					<!--  <compilerArguments>
 						<endorseddirs>${endorsed.dir}</endorseddirs>
-					</compilerArguments>
+					</compilerArguments>-->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -101,7 +101,7 @@
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>2.6</version>
 				<executions>
-					<execution>
+					<!-- <execution>
 						<phase>validate</phase>
 						<goals>
 							<goal>copy</goal>
@@ -118,7 +118,7 @@
 								</artifactItem>
 							</artifactItems>
 						</configuration>
-					</execution>
+					</execution> -->
 				</executions>
 			</plugin>
 		</plugins>
