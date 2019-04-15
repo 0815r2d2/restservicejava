@@ -11,6 +11,8 @@
 		<class>at.fhv.persistencejava.entities.Film</class>
 		<class>at.fhv.persistencejava.entities.Genre</class>
 		<class>at.fhv.persistencejava.entities.Language</class>
+		<class>at.fhv.persistencejava.entities.User</class>
+		<class>at.fhv.persistencejava.entities.Role</class>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />

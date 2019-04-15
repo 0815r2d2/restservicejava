@@ -17,10 +17,14 @@ import at.fhv.persistencejava.entities.Film;
 import at.fhv.persistencejava.entities.Genre;
 import at.fhv.persistencejava.entities.IEntity;
 import at.fhv.persistencejava.entities.Language;
+import at.fhv.persistencejava.entities.Role;
+import at.fhv.persistencejava.entities.User;
 import at.fhv.persistencejava.repositories.ActorRepository;
 import at.fhv.persistencejava.repositories.FilmRepository;
 import at.fhv.persistencejava.repositories.GenreRepository;
 import at.fhv.persistencejava.repositories.LanguageRespository;
+import at.fhv.persistencejava.repositories.RoleRepository;
+import at.fhv.persistencejava.repositories.UserRepository;
 
 
 public class Facade {
@@ -69,6 +73,11 @@ public class Facade {
 		return rep.load(_entityManager, id);
 	}
 	
+	public User loadUser(Integer id) {
+		UserRepository rep = new UserRepository();
+		return rep.load(_entityManager,id);
+	}
+	
 	public void removeActor(Integer id) {
 		ActorRepository rep = new ActorRepository();
 		rep.delete(_entityManager, id);
@@ -106,6 +115,16 @@ public class Facade {
 	
 	public List<Film> loadAllFilms(){
 		FilmRepository rep = new FilmRepository();
+		return rep.loadAll(_entityManager);
+	}
+	
+	public List<User> loadAllUsers(){
+		UserRepository rep = new UserRepository();
+		return rep.loadAll(_entityManager);
+	}
+	
+	public List<Role> loadAllRoles(){
+		RoleRepository rep = new RoleRepository();
 		return rep.loadAll(_entityManager);
 	}
 }
