@@ -4,7 +4,10 @@ C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\entitie
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\facade\Facade.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\SwaggerApplication.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\entities\Genre.java
+C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\entities\User.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\repositories\BaseRepository.java
+C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\dao\LoginDao.java
+C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\servlet\LoginServlet.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\entities\Language.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\repositories\LanguageRespository.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\restcontrollers\CustomerAPI.java
@@ -14,3 +17,4 @@ C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\reposit
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\entities\IEntity.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\entities\Actor.java
 C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\repositories\GenreRepository.java
+C:\Users\bianc\work\restservicejava\src\main\java\at\fhv\persistencejava\repositories\UserRepository.java

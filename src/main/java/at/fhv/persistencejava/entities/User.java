@@ -60,4 +60,8 @@ public class User implements IEntity{
 	public void setRole(Role role) {
 		this.role = role;
 	}
+
+	public void setId(Integer id) {
+		_id = id;
+	}
 }
