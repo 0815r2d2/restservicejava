@@ -33,16 +33,4 @@ public class ListFilmServlet extends HttpServlet {
 		request.setAttribute("films", films);
 		request.getRequestDispatcher("/ListFilm.jsp").forward(request, response);
 	}
-
-	
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		FilmDao filmdao = new FilmDao();
-//		List<Film> films = filmdao.getAllFilms();
-//		request.setAttribute("films", films);
-//		request.getRequestDispatcher("/ListFilm.jsp").forward(request, response);
-	}
 }
