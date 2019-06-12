@@ -36,11 +36,11 @@ public class Film implements IEntity{
 	@Column(name="releaseyear")
 	private Integer _releaseYear;
 	
-	@ManyToOne(optional = false)
+	@ManyToOne()
 	@JoinColumn(name ="languageid")
 	private Language _language;
 	
-	@ManyToOne(optional = false)
+	@ManyToOne()
 	@JoinColumn(name ="genreid")
 	private Genre _genre;
 	
@@ -52,10 +52,14 @@ public class Film implements IEntity{
 	)
 	private List<Actor> _actors = new ArrayList<Actor>();
 	
-	protected Film() {
+	public Film() {
 		
 	}
 	
+	public Film(String title) {
+		_title = title;
+	}
+
 	public Film(String title, Language language, Genre genre) {
 		_title = title;
 		_language = language;

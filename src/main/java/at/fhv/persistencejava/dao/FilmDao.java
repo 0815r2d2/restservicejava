@@ -19,5 +19,11 @@ public class FilmDao {
 		Facade facade = new Facade();
 		return facade.loadAllFilms();
 	}
+	
+	public void addFilm(String name) {
+		Film film = new Film(name);
+		Facade facade = new Facade();
+		facade.saveEntity(film);
+	}
 
 }

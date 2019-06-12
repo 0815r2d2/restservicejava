@@ -11,9 +11,7 @@
 		<h2>List Films</h2>
 	</center>
 	Welcome
-	<%=request.getAttribute("username") %>
-
-
+	
  	<%-- <table>
 		<tr>
 			<%List<Film> result = request.getAttribute("films");
@@ -25,8 +23,9 @@
 		</tr>
 	</table>  --%>
 
-<%-- 	<c:forEach items="${film}" var="films">
-   	Ort = <c:out value="${film.title}" />
-	</c:forEach> --%>
+<c:forEach items="${films}" var="film">
+   	Film = <c:out value="${film._title}" />
+</c:forEach> 
+
 </body>
 </html>

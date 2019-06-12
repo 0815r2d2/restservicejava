@@ -21,7 +21,7 @@
 							.equals(request.getAttribute("username"))) {%>
 	<div style="text-align: right">
 		You will see this only if you are ADMIN <a
-			href="<%=request.getContextPath()%>/AddFilmServlet">Add Film</a>
+			href="<%=request.getContextPath()%>/AddFilm.jsp">Add Film</a>
 	</div>
 	<%}%>
 	
