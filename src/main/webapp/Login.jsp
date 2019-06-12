@@ -4,42 +4,32 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
-		<div class="container">
-			<div class="row">
-				<div class="span3 hidden-phone"></div>
-				<div class="span6" id="form-login">
-					<form class="form-horizontal well" action="j_security_check" method="post">
-						<fieldset>
-							<legend>Login Form</legend>
-							<div class="control-group">
-								<div class="control-label">
-									<label>Username</label>
-								</div>
-								<div class="controls">
-									<input type="text" id="login" name="j_username" placeholder="your.name@youremail.com" class="input-large"/>
-								</div>
-							</div>
-							
-							<div class="control-group">
-								<div class="control-label">
-									<label>Password</label>
-								</div>
-								<div class="controls">
-									<input type="password" id="password" name="j_password" placeholder="type your password" class="input-large"/>
-								</div>
-							</div>
-	
-							<div class="control-group">
-								<div class="controls">
-									<button type="submit" id="submit" class="btn btn-primary button-loading" data-loading-text="Loading...">Sign in</button>
-								</div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
+	<form name="form" action="<%request.getContextPath();%>/LoginServlet"
+		method="post">
+		<table align="center">
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td>
+					<span style="color: red"><%=(request.getAttribute("errMessage") == null) ? "" : 
+						request.getAttribute("errMessage")%>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Login" /> <input type="reset"
+					value="Reset" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
 </html>

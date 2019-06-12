@@ -15,17 +15,15 @@
 	<%=request.getAttribute("username")%>
 
 
-	<%
-		if (request.getSession(false).getAttribute("Admin") != null
-				&& request.getSession(false).getAttribute("Admin").equals(request.getAttribute("username"))) {
-	%>
+	<%if (request.getSession(false).getAttribute("Admin") != null
+				&& request.getSession(false)
+							.getAttribute("Admin")
+							.equals(request.getAttribute("username"))) {%>
 	<div style="text-align: right">
 		You will see this only if you are ADMIN <a
 			href="<%=request.getContextPath()%>/AddFilmServlet">Add Film</a>
 	</div>
-	<%
-		}
-	%>
+	<%}%>
 	
 	
 	<div style="text-align: right">
