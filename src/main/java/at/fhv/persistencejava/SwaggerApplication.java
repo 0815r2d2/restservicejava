@@ -7,7 +7,6 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 import at.fhv.persistencejava.restcontrollers.ActorRestController;
-import at.fhv.persistencejava.restcontrollers.CustomerAPI;
 import io.swagger.jaxrs.config.BeanConfig;
 
 /**
@@ -32,7 +31,6 @@ public class SwaggerApplication extends Application {
   public Set<Class<?>> getClasses()
   {
     HashSet<Class<?>> set = new HashSet<>();
-    set.add(CustomerAPI.class);
     set.add(ActorRestController.class);
     set.add(io.swagger.jaxrs.listing.ApiListingResource.class);
     set.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
